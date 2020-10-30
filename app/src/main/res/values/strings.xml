@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">청파퀵오더</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_floating_button">FloatingButtonActivity</string>
+    <string name="finish_ment">눈송이 고객님 주문이 \n 완료되었습니다 ! \n 주문하신 음료를 찾아가세여:D</string>
+    <string name="admob_app_id">ca-app-pub-5225641756686868~9256820954</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5225641756686868/8187281866</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

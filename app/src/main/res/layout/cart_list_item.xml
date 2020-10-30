@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="메뉴"
+        android:layout_gravity="left"
+        android:layout_weight="2"
+        android:fontFamily="@font/godom"
+        android:textColor="@color/navy"
+        android:textSize="20dp"
+        android:id="@+id/tv_menu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="hot 또는 ice"
+        android:gravity="right"
+        android:layout_weight="2"
+        android:fontFamily="@font/godom"
+        android:textColor="@color/navy"
+        android:textSize="20dp"
+        android:id="@+id/tv_hotice"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:layout_weight="2"
+        android:fontFamily="@font/godom"
+        android:textColor="@color/navy"
+        android:textSize="20dp"
+        android:text="개수" />
+
+
+
+</LinearLayout>

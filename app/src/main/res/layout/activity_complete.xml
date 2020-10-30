@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".CompleteActivity"
+    android:background="@drawable/background"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="커피 주문이 접수 되었습니다!"
+        android:textSize="27dp"
+        android:gravity="center"
+        android:textColor="@color/navy"
+        android:fontFamily="@font/godom"
+        android:layout_margin="16dp">
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/songe4">
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_goMain"
+        android:text="메인으로 돌아가기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/ivory"
+        android:fontFamily="@font/godom"
+        android:textSize="27dp"
+        android:background="@drawable/background_btn"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".StampActivity">
+
+    <TextView
+        android:fontFamily="@font/font"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/ivory"
+        android:backgroundTintMode="multiply"
+        android:id="@+id/tv_stampinfo"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="김눈송님의 본솔 \n 스탬프는 0개입니다"
+        android:layout_marginHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stamp0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/iv_stamp"
+        />
+
+    <Button
+        android:fontFamily="@font/font"
+        android:id="@+id/btn_goMain"
+        android:text="메인으로 돌아가기"
+        android:background="@drawable/background_btn"
+        android:textSize="20dp"
+        android:textColor="@color/ivory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

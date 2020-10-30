@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tv_ready"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="서비스 준비 중 :D"
+        android:textSize="27dp"
+        android:textColor="@color/navy"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/songe3">
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_notReady"
+        android:background="@drawable/background_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="카페 선택으로 돌아가기"
+        android:textSize="27dp"
+        android:textColor="@color/ivory"
+        android:layout_below="@+id/tv_ready"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="smu.mp.mptermproject_cpquick">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/songe"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ThankUActivity" />
+
+        <activity android:name=".ShakeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StampActivity" />
+        <activity android:name=".NotReadyActivity"/>
+        <activity android:name=".CompleteActivity" />
+        <activity android:name=".MyCartActivity" />
+        <activity android:name=".MenuListActivity4" />
+        <activity android:name=".MenuListActivity3" />
+        <activity android:name=".MenuListActivity2" />
+        <activity android:name=".MenuListActivity1" />
+        <activity android:name=".CafeListActivity" />
+        <activity android:name=".MyLogChartActivity" />
+        <activity android:name=".QRCodeActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity
+            android:name=".SmsDisplayActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <receiver android:name=".SmsBroadcastReceiver">
+            <intent-filter android:priority="1">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+    </application>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+</manifest>

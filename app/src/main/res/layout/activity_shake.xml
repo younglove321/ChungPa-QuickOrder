@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShakeActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:id="@+id/tv_CPQ"
+        android:fontFamily="@font/godom"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#A593E0"
+        android:text="청파 퀵오더"/>
+
+
+    <TextView
+
+        android:id="@+id/tv_shakeit"
+        android:gravity="center"
+        android:fontFamily="@font/godom"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="흔들어 보세요!"/>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        android:id="@+id/iv_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/cpq_logo" />
+
+
+</LinearLayout>

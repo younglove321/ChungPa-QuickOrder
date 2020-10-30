@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="455dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:src="@drawable/banner"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_mycpquick"
+            android:fontFamily="@font/font"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn"
+            android:text="마이 청Quick"
+            android:textColor="@color/ivory"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:fontFamily="@font/font"
+            android:id="@+id/btn_stamp"
+            android:layout_width="150dp"
+            android:textColor="@color/ivory"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_btn"
+            android:textSize="20dp"
+            android:text="스탬프"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="285dp"
+        android:textColor="@color/ivory"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/background_btn"
+        android:fontFamily="@font/font"
+        android:textSize="40dp"
+        android:text="주문하기" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_for_test">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

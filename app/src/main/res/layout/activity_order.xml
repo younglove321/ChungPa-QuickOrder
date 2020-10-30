@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:layout_margin="16dp"
+    tools:context=".OrderActivity">
+
+    <!--카페이름, 메뉴사진, 메뉴이름-->
+    <LinearLayout
+        android:id="@+id/order_infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="본솔 커피"
+            android:fontFamily="@font/godom"
+            android:textSize="27dp"
+            android:textColor="@color/navy"
+            android:paddingBottom="16dp"
+            android:id="@+id/order_cafeName"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_menuImg"
+            android:src="@drawable/americano"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_menuName"
+            android:text="아메리카노"
+            android:fontFamily="@font/godom"
+            android:textColor="@color/navy"
+            android:textSize="20dp"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+
+
+    <!--가격-->
+    <LinearLayout
+        android:id="@+id/order_priceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_price"
+            android:text="가격"
+            android:fontFamily="@font/godom"
+            android:textColor="@color/navy"
+            android:textSize="20dp"
+            android:paddingTop="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원"
+            android:id="@+id/order_menuPrice"
+            android:fontFamily="@font/godom"
+            android:textColor="@color/navy"
+            android:textSize="16dp"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+
+
+    <!--hot ,ice 선택 -->
+    <LinearLayout
+        android:id="@+id/order_hoticeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/hotice"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rg_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HOT" />
+
+            <RadioButton
+                android:id="@+id/rg_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ICE" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--수량선택-->
+    <LinearLayout
+        android:id="@+id/order_countLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/godom"
+            android:textColor="@color/navy"
+            android:text="수량"
+            android:textSize="16dp"
+            android:id="@+id/order_countText"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/order_minusButton"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/background_btn2"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_countNum"
+            android:text="  1  "
+            android:textSize="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/godom"
+            android:textColor="@color/navy"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/order_plusButton"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/background_btn2"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/order_addButton"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="담기"
+        android:background="@drawable/background_btn"
+        android:textColor="@color/ivory"
+        android:textSize="27dp"/>
+
+</LinearLayout>
